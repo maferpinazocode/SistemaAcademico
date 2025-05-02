@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Sistema de Gestión Académica";
+}
+
+<div class="jumbotron bg-light p-5 rounded mb-4">
+    <h1 class="display-4">Sistema de Gestión Académica</h1>
+    <p class="lead">Sistema para la gestión de cursos, profesores, alumnos e inscripciones.</p>
+    <hr class="my-4">
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h5 class="card-title mb-0">Cursos</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Gestione los cursos disponibles en el sistema.</p>
+                <a asp-controller="Courses" asp-action="Index" class="btn btn-primary">Ir a Cursos</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <h5 class="card-title mb-0">Profesores</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Administre la información de los profesores.</p>
+                <a asp-controller="Teachers" asp-action="Index" class="btn btn-success">Ir a Profesores</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-header bg-info text-white">
+                <h5 class="card-title mb-0">Estudiantes</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Gestione la información de los estudiantes.</p>
+                <a asp-controller="Students" asp-action="Index" class="btn btn-info">Ir a Estudiantes</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-header bg-warning text-dark">
+                <h5 class="card-title mb-0">Campos de Trabajo</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Administre los campos de trabajo por curso y profesor.</p>
+                <a asp-controller="Workloads" asp-action="Index" class="btn btn-warning">Ir a Campos de Trabajo</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-header bg-danger text-white">
+                <h5 class="card-title mb-0">Inscripciones</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Gestione las inscripciones de estudiantes a los cursos.</p>
+                <a asp-controller="Inscriptions" asp-action="Index" class="btn btn-danger">Ir a Inscripciones</a>
+            </div>
+        </div>
+    </div>
+</div>
